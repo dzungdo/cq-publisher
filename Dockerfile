@@ -5,7 +5,8 @@ FROM rhel7:latest
 # For Adobe CQ 5.5 JVM Compatibility see:
 # https://docs.adobe.com/docs/en/cq/5-5/deploying/technical_requirements.html#Java%20Virtual%20Machines
 RUN yum -y install --disablerepo=* --enablerepo=rhel-7-server-rpms java-1.6.0-openjdk && yum clean all
-# RUN mkdir /aem-publisher/crx-quickstart/dummy.dir
+RUN mkdir /data
+
 # Install CQ AEM.
 ADD http://p9cpwp00003art.corp.ad.ctc/artifactory/generic-dev-local/cq5-publish-p4503.jar /aem-publisher/
 ADD files/license.properties /aem-publisher/
