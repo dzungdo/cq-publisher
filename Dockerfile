@@ -24,4 +24,4 @@ WORKDIR /aem-publisher
 
 EXPOSE 4503
 
-CMD /bin/bash -c java -Xmx1536M -jar cq5-publish-p4503.jar -port 4503 -r publish nosamplecontent
+# CMD /bin/bash -c java -Xmx1536M -jar cq5-publish-p4503.jar -port 4503 -r publish nosamplecontent
